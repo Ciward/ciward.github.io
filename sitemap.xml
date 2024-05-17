@@ -488,13 +488,6 @@
   </url>
   
   <url>
-    <loc>http://ciward.github.io/tags/%E8%B0%83%E7%A0%94/</loc>
-    <lastmod>2024-05-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://ciward.github.io/tags/hexo/</loc>
     <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -503,6 +496,13 @@
   
   <url>
     <loc>http://ciward.github.io/tags/%E9%94%99%E8%AF%AF/</loc>
+    <lastmod>2024-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://ciward.github.io/tags/%E8%B0%83%E7%A0%94/</loc>
     <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -616,14 +616,14 @@
   </url>
   
   <url>
-    <loc>http://ciward.github.io/categories/%E6%96%B0%E7%94%9F%E7%A0%94%E8%AE%A8%E8%AF%BE%E8%B0%83%E7%A0%94/</loc>
+    <loc>http://ciward.github.io/categories/hexo%E7%9B%B8%E5%85%B3/</loc>
     <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://ciward.github.io/categories/hexo%E7%9B%B8%E5%85%B3/</loc>
+    <loc>http://ciward.github.io/categories/%E6%96%B0%E7%94%9F%E7%A0%94%E8%AE%A8%E8%AF%BE%E8%B0%83%E7%A0%94/</loc>
     <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -658,14 +658,14 @@
   </url>
   
   <url>
-    <loc>http://ciward.github.io/categories/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/</loc>
+    <loc>http://ciward.github.io/categories/%E6%B8%B8%E6%88%8F/bug/</loc>
     <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://ciward.github.io/categories/%E6%B8%B8%E6%88%8F/bug/</loc>
+    <loc>http://ciward.github.io/categories/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
