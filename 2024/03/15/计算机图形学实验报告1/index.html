@@ -157,13 +157,13 @@
 <p>ps：报告图片为对应程序用OpenCV绘制。</p>
 </blockquote>
 <h4 id="（1）方法1：射线求交法（交点个数判断）"><a href="#（1）方法1：射线求交法（交点个数判断）" class="headerlink" title="（1）方法1：射线求交法（交点个数判断）"></a>（1）方法1：射线求交法（交点个数判断）</h4><p><strong>基本原理：</strong><br>    从P点分别向AB、BC和CA方向做射线，分别去求往BC、CA和AB的交点。当P点在三角形ABC内时，如下图，三个测试得到3个交点；</p>
-<img src="image-20240314230147918.png" alt="image-20240314230147918" style="zoom:50%;" />
+<img src="/2024/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A1/image-20240314230147918.png" alt="image-20240314230147918" style="zoom:50%;">
 
 <p>而当P点在三角形外时，如下图，将得到少于3个交点</p>
-<img src="image-20240314230302250.png" alt="image-20240314230302250" style="zoom:50%;" />
+<img src="/2024/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A1/image-20240314230302250.png" alt="image-20240314230302250" style="zoom:50%;">
 
 <p>另外，当P在三角形边上是，按在三角形内来算：</p>
-<img src="image-20240314230348531.png" alt="image-20240314230348531" style="zoom:50%;" />
+<img src="/2024/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A1/image-20240314230348531.png" alt="image-20240314230348531" style="zoom:50%;">
 
 <p><strong>计算方法</strong></p>
 <p>通过给定的A，B，C和P点坐标，先编写一函数判断射线和线段是否相交并求交点：</p>
@@ -171,12 +171,12 @@
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">bool</span> <span class="title">isCross</span><span class="params">(Vector2f P,Vector2f d,Vector2f A,Vector2f B,<span class="type">double</span> &amp;t)</span> <span class="comment">//判断射线与线段是否相交</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Vector2f PA = A - P;   </span><br><span class="line">    Vector2f BA = A - B;</span><br><span class="line">    <span class="keyword">if</span>(d[<span class="number">0</span>]*BA[<span class="number">1</span>]-d[<span class="number">1</span>]*BA[<span class="number">0</span>]!=<span class="number">0</span>)&#123;</span><br><span class="line">        t=(PA[<span class="number">0</span>]*BA[<span class="number">1</span>]-PA[<span class="number">1</span>]*BA[<span class="number">0</span>])/(d[<span class="number">0</span>]*BA[<span class="number">1</span>]-d[<span class="number">1</span>]*BA[<span class="number">0</span>]);</span><br><span class="line">        <span class="type">double</span> u=(d[<span class="number">0</span>]*PA[<span class="number">1</span>]-d[<span class="number">1</span>]*PA[<span class="number">0</span>])/(d[<span class="number">0</span>]*BA[<span class="number">1</span>]-d[<span class="number">1</span>]*BA[<span class="number">0</span>]);</span><br><span class="line">        <span class="keyword">if</span>(t&gt;=<span class="number">0</span>&amp;&amp;u&gt;=<span class="number">0</span>&amp;&amp;u&lt;=<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><strong>运行测试：</strong>通过标准输入选取点的坐标，输出保存在output.png文件</p>
-<p><img src="/image-20240314231353264.png" alt="image-20240314231353264"></p>
+<p><img src="/2024/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A1/image-20240314231353264.png" alt="image-20240314231353264"></p>
 <h4 id="（2）方法2：面积法"><a href="#（2）方法2：面积法" class="headerlink" title="（2）方法2：面积法"></a>（2）方法2：面积法</h4><p><strong>基本原理：</strong>分别计算三角形ABC、PAB、PBC、PCA的面积，若后三者面积相加等于S_ABC,则P在三角形内；</p>
-<img src="image-20240314231103537.png" alt="image-20240314231103537" style="zoom:50%;" />
+<img src="/2024/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A1/image-20240314231103537.png" alt="image-20240314231103537" style="zoom:50%;">
 
 <p>否则（大于S_ABC）则在三角形外。</p>
-<img src="image-20240314231534999.png" alt="image-20240314231534999" style="zoom:50%;" />
+<img src="/2024/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A1/image-20240314231534999.png" alt="image-20240314231534999" style="zoom:50%;">
 
 <p><strong>计算方法：</strong>对于三角形ABC，其面积可用<strong>任两边向量叉乘取模再除2</strong>得到</p>
 <p>关键代码：</p>
@@ -184,10 +184,10 @@
 
 <p><strong>运行测试：</strong>同方法1.</p>
 <h4 id="（3）方法3：同侧法"><a href="#（3）方法3：同侧法" class="headerlink" title="（3）方法3：同侧法"></a>（3）方法3：同侧法</h4><p><strong>基本原理：</strong>若P在ABC内，则AP、BP、CP必定分别在AB、BC、CA同侧；</p>
-<img src="image-20240314233052073.png" alt="image-20240314233052073" style="zoom:50%;" />
+<img src="/2024/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A1/image-20240314233052073.png" alt="image-20240314233052073" style="zoom:50%;">
 
 <p>否则在ABC外。</p>
-<img src="output (1)-17104745668432.png" alt="output (1)" style="zoom:50%;" />
+<img src="/2024/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A1/output (1)-17104745668432.png" alt="output (1)" style="zoom:50%;">
 
 <p><strong>计算方法：</strong>判断向量AP在AB哪一侧可以用$\vec{AB} \times \vec{AP}$的符号判断，若为正，根据右手定则，AP在AB左侧，否则在右侧。</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (AB.<span class="built_in">cross</span>(AP).<span class="built_in">dot</span>(BC.<span class="built_in">cross</span>(AP))&gt; <span class="number">0</span> &amp;&amp; BC.<span class="built_in">cross</span>(BP).<span class="built_in">dot</span>(CA.<span class="built_in">cross</span>(BP)) &gt; <span class="number">0</span> &amp;&amp; CA.<span class="built_in">cross</span>(CP).<span class="built_in">dot</span>(AB.<span class="built_in">cross</span>(CP)) &gt; <span class="number">0</span>)&#123;</span><br><span class="line">    text = <span class="string">&quot;P is in the triangle&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line">    text = <span class="string">&quot;P is NOT in the triangle&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
