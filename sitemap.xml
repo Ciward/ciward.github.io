@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>http://ciward.github.io/categories/categories/%E5%85%B3%E4%BA%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E4%BA%BA%E4%BD%93%E5%8A%A8%E4%BD%9C%E8%AF%86%E5%88%AB%E7%AE%97%E6%B3%95%E8%B0%83%E7%A0%94.html</loc>
+    <loc>http://ciward.github.io/categories/categories/%E5%85%B3%E4%BA%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95%E7%9A%84%E8%B0%83%E7%A0%94.html</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>http://ciward.github.io/categories/categories/%E5%85%B3%E4%BA%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95%E7%9A%84%E8%B0%83%E7%A0%94.html</loc>
+    <loc>http://ciward.github.io/categories/categories/%E5%85%B3%E4%BA%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E4%BA%BA%E4%BD%93%E5%8A%A8%E4%BD%9C%E8%AF%86%E5%88%AB%E7%AE%97%E6%B3%95%E8%B0%83%E7%A0%94.html</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -308,15 +308,6 @@
   </url>
   
   <url>
-    <loc>http://ciward.github.io/2024/06/07/hexo%E7%9B%B8%E5%AF%B9url%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E5%AF%BC%E8%87%B4%E7%9A%84%E8%B5%84%E6%BA%90404%E5%92%8C%E8%B7%B3%E8%BD%AC%E9%94%99%E8%AF%AF/</loc>
-    
-    <lastmod>2024-06-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://ciward.github.io/2024/06/07/gpt-sovits/</loc>
     
     <lastmod>2024-06-07</lastmod>
@@ -326,7 +317,7 @@
   </url>
   
   <url>
-    <loc>http://ciward.github.io/2024/06/07/driving_school-9-copy/</loc>
+    <loc>http://ciward.github.io/2024/06/07/hexo%E7%9B%B8%E5%AF%B9url%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E5%AF%BC%E8%87%B4%E7%9A%84%E8%B5%84%E6%BA%90404%E5%92%8C%E8%B7%B3%E8%BD%AC%E9%94%99%E8%AF%AF/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -336,6 +327,15 @@
   
   <url>
     <loc>http://ciward.github.io/2024/06/07/driving_school-8-copy/</loc>
+    
+    <lastmod>2024-06-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://ciward.github.io/2024/06/07/driving_school-9-copy/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -483,6 +483,20 @@
   </url>
   
   <url>
+    <loc>http://ciward.github.io/tags/Kaggle/</loc>
+    <lastmod>2024-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://ciward.github.io/tags/GPT-SoVITS/</loc>
+    <lastmod>2024-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://ciward.github.io/tags/hexo/</loc>
     <lastmod>2024-10-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -580,20 +594,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>http://ciward.github.io/tags/Kaggle/</loc>
-    <lastmod>2024-10-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://ciward.github.io/tags/GPT-SoVITS/</loc>
-    <lastmod>2024-10-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -612,6 +612,13 @@
   
   <url>
     <loc>http://ciward.github.io/categories/SQL%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2024-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://ciward.github.io/categories/%E4%BA%91%E5%BC%80%E5%8F%91/AI/</loc>
     <lastmod>2024-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -675,13 +682,6 @@
   
   <url>
     <loc>http://ciward.github.io/categories/%E6%B8%B8%E6%88%8F/bug/</loc>
-    <lastmod>2024-10-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://ciward.github.io/categories/%E4%BA%91%E5%BC%80%E5%8F%91/AI/</loc>
     <lastmod>2024-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
